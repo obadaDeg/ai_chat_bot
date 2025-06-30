@@ -17,11 +17,13 @@ import { Ionicons } from '@expo/vector-icons';
 import axios from 'axios';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
+// import dotenv
+import dotenv from 'dotenv';
 
 const { width } = Dimensions.get('window');
 
 // Replace with your OpenRouter API key
-const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 interface Message {
   id: number;
